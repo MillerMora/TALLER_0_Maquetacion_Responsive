@@ -1,7 +1,22 @@
 body {
     background-image: url("../img/login/bg-login.png");
-    
+
 }
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box {
+    background-image: url("../img/Group\ 200.svg");
+    padding: 100px;
+    width: 300px;
+}
+form {
+    color: white;
+}
+
 @media screen and (min-width:1308px) {
 
 }
