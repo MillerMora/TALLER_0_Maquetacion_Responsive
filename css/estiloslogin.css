@@ -1,21 +1,96 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-image: url("../img/login/bg-login.png");
-
 }
-.login-container{
+
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .login-box {
-    background-image: url("../img/Group\ 200.svg");
-    padding: 100px;
-    width: 300px;
-    color: white;
+    background-color: rgba(52, 152, 219, 0.7);
+    padding: 60px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.icono-container {
+    width: 50px;
+    height: 50px;
+    background-color: #9c2759; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
+.icono-persona {
+    color: white; 
+    font-size: 24px; 
+    margin: auto;
+}
+.login-box img {
+    width: 150px;
+    margin-bottom: 60px;
+    background-image: url("../img/login/vector-login.svg");
+    
+}
 
-@media screen and (min-width:1308px) {
+.container {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 6px;
+    color: #f1ecec; 
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5f5f5; 
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #ffffff; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #333333; 
+}
+
+.container span {
+    display: block;
+    margin-top: 20px;
+    color: #555555; 
+}
+
+.container span a {
+    color: #000000; 
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+    .menu {
+        display: flex; 
+    }
+}
+@media screen and (min-width: 1308px) {
 
 }
