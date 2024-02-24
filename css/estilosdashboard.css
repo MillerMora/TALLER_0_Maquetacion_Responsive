@@ -1,0 +1,51 @@
+.sidebar {
+    background-color: blue;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.user-info {
+    padding: 20px;
+}
+
+.user-info h2,
+.user-info p {
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.logout button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
