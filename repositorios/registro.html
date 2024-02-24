@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilosregistro.css">
+  <title>Registro</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="../img/Hotelia horizontal blanco.svg" alt="logo">
+    <p>Eres mas que bienvenido</p>
+  </div>
+  <div class="main">
+    <div class="register-form">
+      <h2>Regístrate</h2>
+      <form action="login.html" method="post">
+        <label for="tipo_documento">Tipo de documento:</label>
+        <select name="tipo_documento" id="tipo_documento">
+          <option value="dni">DNI</option>
+          <option value="pasaporte">Pasaporte</option>
+        </select>
+        
+        <label for="numero_documento">Número de documento:</label>
+        <input type="text" name="numero_documento" id="numero_documento">
+        
+        <label for="nombres">Nombres:</label>
+        <input type="text" name="nombres" id="nombres">
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos">
+        
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+        
+        <label>Género:</label>
+        <input type="radio" name="genero" id="genero_femenino" value="femenino">
+        <label for="genero_femenino">Mujer</label>
+        <input type="radio" name="genero" id="genero_masculino" value="masculino">
+        <label for="genero_masculino">Hombre</label>
+        <input type="radio" name="genero" id="genero_otro" value="otro">
+        <label for="genero_otro">Otro</label>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" name="telefono" id="telefono">
+        
+        <label for="pais_origen">País de origen:</label>
+        <select name="pais_origen" id="pais_origen">
+          <option value="argentina">Argentina</option>
+          <option value="espana">España</option>
+        </select>
+        
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto">
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena">
+        
+        <label for="confirmar_contrasena">Confirmar contraseña:</label>
+        <input type="password" name="confirmar_contrasena" id="confirmar_contrasena">
+        
+        <div class="terms">
+          Acepto términos y condiciones.
+        </div>
+        
+        <button type="submit">Registrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
