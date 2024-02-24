@@ -1,51 +1,107 @@
-.sidebar {
+body {
+    background-image: url("../img/index/slide2.png");
+}
+
+.logo {
     background-color: blue;
-    color: white;
-    height: 100%;
-    width: 250px;
-    position: fixed;
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    text-align: center; /* Centra la imagen dentro del contenedor */
 }
 
 .logo img {
-    width: 100%;
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
-.user-info {
-    padding: 20px;
+/* Estilos para la barra lateral */
+.sidebar {
+    background-color: #000;
+    width: 200px; /* Ancho de la barra lateral */
+    height: 100vh; /* Altura completa del viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto; /* Para que la barra lateral sea desplazable si hay mucho contenido */
 }
 
-.user-info h2,
-.user-info p {
-    margin-bottom: 10px;
-}
-
-.menu ul {
+.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-.menu li {
-    margin-bottom: 10px;
+.sidebar ul li a {
+    display: block;
     padding: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
-.menu li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+.sidebar ul li a:hover {
+    background-color: #333;
 }
 
-.logout {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+/* Estilos para la sección principal */
+.main {
+    margin-left: 250px; /* Ancho de la barra lateral */
+    padding: 20px;
 }
 
-.logout button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+form {
+    display: flex;
+    flex-direction: row; /* Para dividir el formulario en dos partes */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px; /* Reducimos el padding */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente */
+    max-width: calc(100% - 220px); /* Limitamos el ancho al 100% del viewport menos el ancho de la barra lateral */
+}
+
+.left-section,
+.right-section {
+    flex: 1; /* Ambas secciones ocuparán el mismo espacio */
+    padding: 0 10px; /* Agregamos algo de espacio alrededor de los campos */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: calc(100% - 22px); /* Reducimos el ancho para compensar el padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Posicionar "Cerrar sesión" al final de la barra lateral */
+.sidebar ul li:last-child {
+    position: absolute;
+    bottom: 0;
 }
